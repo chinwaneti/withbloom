@@ -7,7 +7,8 @@ import codigo3 from "./images/codigo3.webp";
 import codigo5 from "./images/codigo5.webp";
 import codigo6 from "./images/codigo6.webp";
 import codigo7 from "./images/codigo7.webp";
-import codigo8 from "./images/codigo8.webp";
+// import codigo8 from "./images/codigo8.webp";
+import codigo8 from "./images/codigo8.webp"
 
 export default function Style() {
     const [hoverStates, setHoverStates] = useState([false, false, false, false, false, false, false, false]);
