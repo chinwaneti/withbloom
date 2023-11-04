@@ -3,7 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import pic from "./images/mobile-app.webp";
 import './Main.css'; // Import a CSS file to define the animation
-import Style from './Style';
+// import Style from './Style';
 import happy from "./images/happy.png"
 import { motion } from 'framer-motion';
 
@@ -91,8 +91,8 @@ export default function Main() {
         <p className='text-blue-800 font-bold text-center text-4xl absolute top-[122%] py-7 md:ml-[31%] ml-5'>Your safe space for investing</p>
       </div>
 
-      <div className='absolute md:top-[127%] top-[150%] ml-5'>
-        <Style /></div>
+      {/* <div className='absolute md:top-[127%] top-[150%] ml-5'>
+        <Style /></div> */}
 
       
 
