@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
+import { signInWithEmailAndPassword,  } from 'firebase/auth';
 import { motion } from 'framer-motion';
 // import { AiOutlineClose } from 'react-icons/ai';
 import { auth } from '../firebase';

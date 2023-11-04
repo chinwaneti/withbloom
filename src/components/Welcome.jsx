@@ -15,7 +15,7 @@ export default function Welcome() {
   }, [router]);
 
   return (
-    <div className='bg-blue-500 text-center text-white h-screen flex flex-col justify-center items-center'>
+    <div className='bg-[#082c64] text-center text-white h-screen flex flex-col justify-center items-center'>
       <div className='flex items-center mt-[15%] font-extrabold text-4xl'>
         <motion.div
           initial={{ x: -1000 }}

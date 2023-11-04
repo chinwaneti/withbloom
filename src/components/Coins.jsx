@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineHome } from 'react-icons/ai';
-import { PulseLoader } from 'react-spinners'; // Import the PulseLoader component
-import './Main.css'; // You can create a separate CSS file for styling the loader
+import { PulseLoader } from 'react-spinners';
+import './Main.css';
 
 export default function Coins() {
   const [state, setState] = useState({
@@ -37,25 +37,25 @@ export default function Coins() {
     };
 
     fetchCryptoData();
-  }, [state.currencies]);
+  }, [state]); // Include 'state' in the dependency array
 
   const { currencies, coinData, isLoading } = state;
 
   return (
     <div className="bg-gray-200 min-h-screen flex items-center justify-center">
-       <Link to="/main"><span className='absolute top-3 left-4'><AiOutlineHome size={25}/></span></Link>
+      <Link to="/main"><span className='absolute top-3 left-4'><AiOutlineHome size={25}/></span></Link>
       <div className="bg-white shadow-md rounded-md p-4 md:p-10 w-full md:w-[50%]">
         <h2 className="text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-center p-3 md:p-5">Cryptocurrency Prices</h2>
         {isLoading ? (
           <div className="text-center loader-container">
-            <PulseLoader color="#007BFF" size={15} margin={2} /> {/* Use PulseLoader from react-spinners */}
+            <PulseLoader color="#007BFF" size={15} margin={2} />
             <p>Loading...</p>
           </div>
         ) : (
           <div className="mb-2 md:mb-4">
             {currencies.map((currency) => (
               <div key={currency} className="flex flex-col md:flex-row hover:bg-gray-100 items-center justify-between p-2 border-b">
-                <div className="flex items-center mb-2 md:mb-0 ">
+                <div className="flex items-center mb-2 md-mb-0">
                   <img
                     src={coinData[currency]?.image}
                     alt={currency}
