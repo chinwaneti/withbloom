@@ -6,14 +6,27 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.10.2",
+    "axios": "^1.6.0",
+    "easy-currency-converter": "^1.0.1",
+    "firebase": "^10.5.0",
+    "framer-motion": "^10.16.4",
+    "next": "^13.5.6",
+    "path-browserify": "^1.0.1",
     "react": "^18.2.0",
+    "react-apexcharts": "^1.4.1",
+    "react-currency-converter": "^1.0.5",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
+    "react-router-dom": "^6.17.0",
     "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.8",
+    "util": "^0.12.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -34,5 +47,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "customize-cra": "^1.0.0",
+    "react-app-rewired": "^2.2.1",
+    "tailwindcss": "^3.3.5"
   }
 }
