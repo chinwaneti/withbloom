@@ -1,7 +1,6 @@
 "use client"
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { auth } from '../firebase';
@@ -17,7 +16,6 @@ function SignUp() {
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [sucessMessage, setSucessMessage] = useState('');
-  const router = useNavigate();
   const { setUser } = useAuth();
   
   const handleSignUp = (e) => {
@@ -30,10 +28,8 @@ function SignUp() {
         setSucessMessage("Congratulations! you are now registered.")
         setUser(user);
 
-        // router("/SignIn")
       })
       .catch((error) => {
-        // const errorCode = error.code;
         const errorMessage = error.message;
         setErrorMessage(errorMessage);
       });

@@ -22,16 +22,14 @@ function SignIn() {
     e.preventDefault();
     setErrorMessage('');
     signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        console.log(userCredential);
+      .then(() => {
         router('/Main');
       })
       .catch((error) => {
-        if (error.code === '400 (Bad Request)') {
-          setErrorMessage('Email or Password error.');
+        if (error.code === 'auth/wrong-password' || error.code === 'auth/user-not-found') {
+          setErrorMessage('Email or password is incorrect.');
         } else {
-          setErrorMessage('Email or Password error!');
+          setErrorMessage('An error occurred while signing in.');
         }
       });
   };

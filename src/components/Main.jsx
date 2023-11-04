@@ -6,7 +6,6 @@ import './Main.css'; // Import a CSS file to define the animation
 import Style from './Style';
 import happy from "./images/happy.png"
 import { motion } from 'framer-motion';
-// import { motion } from 'framer-motion';
 
 
 export default function Main() {
@@ -39,38 +38,42 @@ export default function Main() {
         </p> */}
 
         <div>
-        <motion.p
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1 }}
-    className='font-extrabold md:text-[50px] text-[25px] md:w-[50%] w-full ml-[5%] mt-[7%]'
-  >
-    The Better Way
-    <div className='text-blue-800'>To Trade and Invest.</div>
-  </motion.p>
+        <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+  className='font-extrabold md:text-[50px] text-[25px] md:w-[50%] w-full ml-[5%] mt-[7%]'
+>
+  The Better Way
+  <div className='text-blue-800'>To Trade and Invest.</div>
+</motion.div>
 
-  <motion.p
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.2 }}
-      className='ml-[5%] md:w-[51.5%] mt-4'
-    >
-     WithBloom: Simplify currency exchange and monitor crypto values effortlessly. Your comprehensive financial companion for efficient money management.
-    </motion.p>
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5, delay: 0.2 }}
+  className='ml-[5%] md:w-[51.5%] mt-4'
+>
+  WithBloom: Simplify currency exchange and monitor crypto values effortlessly. Your comprehensive financial companion for efficient money management.
+</motion.div>
 
-    <motion.p
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.4 }}
-      className='ml-[5%] my-5 md:w-[51.5%]'
-    >
-      Bitcoin (BTC):
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5, delay: 0.4 }}
+  className='ml-[5%] my-5 md:w-[51.5%]'
+>
+  The Better Way To Trade and Invest.
+  <br />
+  Bitcoin (BTC):
+  <br />
+  Approximate Exchange Rate: 1 BTC = $40,000 USD
+  <br />
+  Ethereum (ETH):
+  <br />
+  Approximate Exchange Rate: 1 ETH = $2,500 USD
+</motion.div>
 
-Approximate Exchange Rate: 1 BTC = $40,000 USD
-Ethereum (ETH):
-
-Approximate Exchange Rate: 1 ETH = $2,500 USD
-    </motion.p>
 
         </div>
 
